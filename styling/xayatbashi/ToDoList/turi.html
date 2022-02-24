@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<style>
+    .sub-title {
+        color: darksalmon;
+    }
+
+    li:only-child {
+        color: darkseagreen;
+    }
+
+    #google-link:link {
+        color: blue;
+    }
+
+    #google-link:visited {
+        color: red;
+    }
+
+    textarea~button {
+        color: red;
+    }
+
+    ul>li {
+        color: blue;
+    }
+
+    img[src ^="../img/"] {
+        border: 10px;
+    }
+</style>
+<div>
+    <p>
+    <h1 class="sub-title">
+        selectors:</h1>
+    1-element selector
+    tag p : p{}
+    2-class selector
+    .class_name{}
+    3-id selector
+    #id{}
+    </p>
+
+    <p>
+
+
+        priorty:
+        inline style >> id >> class >> tag
+        class:multi objects
+
+        peuduselectors:
+        h2:hover{ hover: is peuduselectors's name
+
+        }
+
+        child and parent:
+        ul is parent and li is child
+    <ul>
+        <li>
+            first child
+        </li>
+        <li>
+            last child
+
+        </li>
+    </ul>
+    for styling we use li not parent(ul)
+    li:last-child /first-child /nth-child(n)/
+    only-child:when we have one child
+    {}
+
+
+
+    </p>
+
+    <a href="www.google.com" id="google-link">click on me</a>
+</div>
+
+<div>
+    <h1>advance selectors</h1>
+    <textarea name="" id="" cols="30" rows="10">
+    textarea ~ button{}
+    every button followed texteara with same parent
+     (it make on button)</textarea>
+    <button>
+
+    </button>
+
+    h1 + p{} :first element :h1/ second element
+    every elemet that folow h1
+    the style be on p
+    ------
+    ul > li
+    every li include ul
+    it choose direct parent
+    (1)
+    ---------
+
+    ul li {
+    any li that include in ul
+    it select the parent parent element
+    }
+    (2)
+
+    <ul> all the (2)
+        <li> js this (1)
+            <ol>
+                orderd list
+            </ol>
+        </li>
+    </ul>
+
+
+</div>
+
+<div>
+  <h1>attribute selectors</h1>  
+
+    img[src ^="../img/"] :[we write attribiute here]
+    every img tag that src contain
+    *= every img tag that src contain
+
+--------
+class="class1  class2"
+
+------
+h2[class ~=class2]{
+
+}
+!= 
+
+------------------------
+
+
+
+
+</div>
+
+<div>
+selector{
+    property:value;
+}
+
+
+hex color-rgb color
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,59 @@
+.goal-grid-wrapper.scrl {
+  position: relative;
+  overflow: auto;
+  width: 100%; }
+  .goal-grid-wrapper.scrl .goal-grid {
+    padding-top: 20px; }
+  .goal-grid-wrapper.scrl.desktop .goal-grid {
+    padding-bottom: 30px; }
+  .goal-grid-wrapper.scrl.ymin .goal-grid {
+    padding-top: 10px; }
+
+.goal-grid-wrapper.mobile .goal-grid,
+.goal-grid-wrapper.lte-xxs .goal-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  grid-gap: 0; }
+  .goal-grid-wrapper.mobile .goal-grid .goal,
+  .goal-grid-wrapper.lte-xxs .goal-grid .goal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    min-height: 2rem;
+    min-width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    gap: 0;
+    text-align: left; }
+    .goal-grid-wrapper.mobile .goal-grid .goal svg,
+    .goal-grid-wrapper.lte-xxs .goal-grid .goal svg {
+      margin-right: 0.5rem; }
+    .goal-grid-wrapper.mobile .goal-grid .goal:last-child,
+    .goal-grid-wrapper.lte-xxs .goal-grid .goal:last-child {
+      margin-bottom: 30px; }
+
+.goal {
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  border: 2px solid;
+  border-color: var(--ux-77zzwv, lightgray);
+  padding: 16px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  font-size: 16px;
+  min-height: 7rem;
+  outline: none; }
+
+.goal:hover,
+.goal:focus {
+  border-color: var(--ux-ut3xrx, black); }
+
+.goal.active {
+  color: var(--ux-ut3xrx, black);
+  border-color: var(--ux-ut3xrx, black);
+  background-color: rgba(9, 117, 122, 0.1); }
